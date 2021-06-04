@@ -16,9 +16,9 @@ npm install
 cp example.env .env
 ```
 
-### Heroku support
+### Production Environment
 
-Add config vars as per the `.env` file and deploy the project
+No need to create `.env` file for production environment. `DotEnv` package is used as only Dev Dependency. It is not required for production environment. Store the API keys on the host environment as per the `.env` config vars.
 
 ## Usage
 
