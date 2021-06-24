@@ -1,6 +1,5 @@
 const request = require("request");
-if (process.env.NODE_ENV.toLowerCase() !== "production")
-  require("dotenv").config();
+if (process.env.NODE_ENV !== "production") require("dotenv").config();
 
 const geocode = (address, callback) => {
   const url =
