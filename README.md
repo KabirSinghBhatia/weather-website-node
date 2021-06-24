@@ -1,6 +1,6 @@
 # Weather Website Node
 
-It is a web application/website which provides weather information of a location based on user's search query.
+It is a web application / website which provides weather information of a location based on user's search query.
 
 ## Installation
 
@@ -10,7 +10,9 @@ Install the node modules using npm in the application root.
 npm install
 ```
 
-### Create a `.env` file in application root from `example.env` and add API access keys
+### Development Environment
+
+Create a `.env` file in application root from `example.env` and add API access keys for **local / development** environment
 
 ```bash
 cp example.env .env
@@ -18,14 +20,20 @@ cp example.env .env
 
 ### Production Environment
 
-No need to create `.env` file for production environment. `DotEnv` package is used as only Dev Dependency. It is not required for production environment. Store the API keys on the host environment as per the `.env` config vars.
+No need to create `.env` file. Store the API keys on the **host / production** environment as per the `.env` config. variables.
 
 ## Usage
 
-Just run the application using npm in the application root.
+Run the application using the following command for **Production** environment.
 
 ```bash
 npm run start
+```
+
+Run the application **locally** using the following command for **Development** environment.
+
+```bash
+npm run dev
 ```
 
 ## Contributing
