@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/app.js",
-    "dev": "nodemon src/app.js -e js,hbs"
+    "start": "NODE_ENV=production node src/app.js",
+    "dev": "NODE_ENV=development nodemon src/app.js -e js,hbs"
   },
   "keywords": [],
   "author": "",
