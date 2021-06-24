@@ -1,6 +1,7 @@
 const path = require("path");
 const express = require("express");
 const hbs = require("hbs");
+if (process.env.NODE_ENV !== "production") require("dotenv").config();
 
 // Requiring weather APIs
 const geocode = require("./utils/geocode");

@@ -1,5 +1,4 @@
 const request = require("request");
-if (process.env.NODE_ENV !== "production") require("dotenv").config();
 
 const forecast = (lat, long, callback) => {
   const url =
